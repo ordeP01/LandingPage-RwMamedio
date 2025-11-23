@@ -317,10 +317,10 @@ body.is-nav-open .nav-toggle span:nth-child(3) {
 
 .hero__grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 3.5rem;
-  align-items: center;
-  height: 100%;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  height: auto;
 }
 
 .hero__badge {
@@ -367,9 +367,10 @@ body.is-nav-open .nav-toggle span:nth-child(3) {
 
 .hero__media {
   position: relative;
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: stretch;
+  order: -1;
 }
 
 .hero__figure {
@@ -381,10 +382,14 @@ body.is-nav-open .nav-toggle span:nth-child(3) {
   width: 100%;
   display: flex;
   flex-direction: column;
+  height: 320px;
+  max-height: 520px;
 }
 
 .hero__figure img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   height: 100%;
   object-fit: cover;
   flex: 1;
@@ -489,7 +494,7 @@ body.is-nav-open .nav-toggle span:nth-child(3) {
 /* ---------- About ---------- */
 .split {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2.5rem;
   align-items: start;
 }
@@ -529,7 +534,7 @@ body.is-nav-open .nav-toggle span:nth-child(3) {
 
 .about {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2.5rem;
   align-items: start;
 }
@@ -628,7 +633,7 @@ body.is-nav-open .nav-toggle span:nth-child(3) {
 /* ---------- Contact ---------- */
 .contact {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 2.5rem;
   align-items: start;
 }
@@ -737,36 +742,37 @@ body.is-nav-open .nav-toggle span:nth-child(3) {
   }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .hero-slider {
-    min-height: 680px;
+    min-height: 520px;
   }
 
   .hero__grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    height: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3.5rem;
+    align-items: center;
+    height: 100%;
   }
 
   .hero__media {
-    order: -1;
-    height: auto;
+    order: initial;
+    height: 100%;
   }
 
   .hero__figure {
-    height: 320px;
+    height: auto;
   }
 
   .about {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 
   .contact {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .split {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
 
@@ -776,7 +782,7 @@ body.is-nav-open .nav-toggle span:nth-child(3) {
   }
 
   .hero-slider {
-    min-height: 720px;
+    min-height: 640px;
   }
 
   .site-header__row {
