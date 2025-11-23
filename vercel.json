@@ -1,0 +1,14 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/projetos-arquitetonicos", "destination": "/projetos-arquitetonicos/index.html" },
+    { "source": "/regularizacao-imoveis", "destination": "/regularizacao-imoveis/index.html" },
+    { "source": "/interiores", "destination": "/interiores/index.html" },
+    { "source": "/paisagismo", "destination": "/paisagismo/index.html" },
+    { "source": "/acompanhamento-obra", "destination": "/acompanhamento-obra/index.html" },
+    { "source": "/ilustracoes-digitais", "destination": "/ilustracoes-digitais/index.html" },
+    { "source": "/construcao-reforma", "destination": "/construcao-reforma/index.html" },
+    { "source": "/piso-granilite", "destination": "/piso-granilite/index.html" },
+    { "source": "/avcb", "destination": "/avcb/index.html" }
+  ]
+}
